@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Active Navigation Link */
+.active {
+  @apply text-cyan-500;
+}
+
+.active svg {
+  @apply text-cyan-500;
+}
+
+.bar:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.bar:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.bar:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.bar:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.bar:nth-child(6) {
+  animation-delay: 1s;
+}
+
+.smooth-transition {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* --- Custom Color Scheme Overrides --- */
+/* body {
+  background: linear-gradient(135deg, #18122B 0%, #393053 100%);
+  color: #e0e0e0;
+} */
+
+.text-white {
+  color: #f8f8ff !important;
+}
+
+.text-gray-300 {
+  color: #7fffd4 !important; /* neon aqua */
+}
+
+.text-cyan-500, .text-cyan-400, .text-cyan-600 {
+  color: #00fff7 !important;
+}
+
+.bg-white\/5, .bg-white\/10 {
+  background-color: rgba(44, 0, 80, 0.12) !important; /* deep purple glass */
+}
+
+.bg-opacity-80 {
+  background-color: rgba(0, 255, 255, 0.08) !important; /* neon cyan glass */
+}
+
+a:hover, .cursor-pointer:hover {
+  color: #ff00cc !important;
+}
+/* --- Custom Sunset Color Scheme Overrides --- */
+body {
+  background: linear-gradient(135deg, #2d1e12 0%, #ffb347 100%);
+  color: #2d1e12;
+}
+
+.text-white {
+  color: #fff8e7 !important;
+}
+
+.text-gray-300 {
+  color: #ffb347 !important; /* warm gold */
+}
+
+.text-cyan-500, .text-cyan-400, .text-cyan-600 {
+  color: #ff7043 !important; /* sunset orange */
+}
+
+.bg-white\/5, .bg-white\/10 {
+  background-color: rgba(255, 183, 77, 0.12) !important; /* soft gold glass */
+}
+
+.bg-opacity-80 {
+  background-color: rgba(255, 112, 67, 0.08) !important; /* sunset orange glass */
+}
+
+a:hover, .cursor-pointer:hover {
+  color: #ff7043 !important;
+}
+/* --- Force Sunset Background Everywhere --- */
+body,
+.bg-gradient-to-br,
+.bg-gradient-to-r,
+.bg-gradient-to-l,
+.bg-gradient-to-t,
+.bg-gradient-to-b,
+.bg-gradient-to-tr,
+.bg-gradient-to-tl,
+.bg-gradient-to-bl,
+.bg-gradient-to-br {
+  background: linear-gradient(135deg, #2d1e12 0%, #ffb347 100%) !important;
+  color: #2d1e12 !important;
+}
